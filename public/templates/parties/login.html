@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col s12">
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">Sign in</span>
+                <div class="row center-align">
+                    <form class="col s8 offset-s2">
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="title" type="text" ng-model="user.email" class="validate">
+                                <label for="title" data-error="wrong" data-success="right">Username</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="title" type="password" ng-model="user.password" class="validate">
+                                <label for="title" data-error="wrong" data-success="right">Password</label>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row card-action">
+                            <div class="col s6 center-align">
+                                <button ng-click="signup()" class="btn waves-effect waves-light">SignUp
+                                    <i class="material-icons right">cancel</i>
+                                </button>
+                            </div>
+                            <div class="col s6 center-align">
+                                <button ng-click="login()" class="btn waves-effect waves-light green" type="submit">Login
+                                    <i class="material-icons right">send</i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

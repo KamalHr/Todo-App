@@ -1,0 +1,28 @@
+<div class="container">
+    <br><br>
+   	<div class="row center-align">
+  		<span class="flow-text">
+            <img class="responsive-img" src="./img/logo.png">
+        </span>
+    </div>
+    <br><br>
+    <div class="row">
+      	<div class="col s8 offset-s2">
+      		<div ui-view="main"></div>
+      	</div>
+    </div>
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul ng-show="currentUser">
+            <li><a ng-click="doneAll()" class="btn-floating yellow darken-1"><i class="material-icons">done_all</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">settings</i></a></li>
+            <li><a ng-click="logout()" class="btn-floating blue"><i class="material-icons">power_settings_new</i></a></li>
+            <li><a ui-sref="add" class="btn-floating blue"><i class="material-icons">playlist_add</i></a></li>
+        </ul>
+        <ul ng-show="!currentUser">
+            <li><a ui-sref="add" class="btn-floating blue"><i class="material-icons">playlist_add</i></a></li>
+        </ul>
+    </div>
+</div>			
